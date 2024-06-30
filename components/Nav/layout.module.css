@@ -1,0 +1,32 @@
+.mainNav {
+  position: fixed;
+
+  top: var(--navEdgePadding);
+  right: var(--navEdgePadding);
+  bottom: var(--navEdgePadding);
+  left: var(--navEdgePadding);
+
+  display: grid;
+  grid-template-columns: var(--navThickness) 1fr 1200px 1fr var(--navThickness);
+  grid-template-rows: var(--navThickness) 1fr;
+
+  grid-template-areas:
+    "logo    navleft navbar  navright navright"
+    "sidebar .       .       .        .       ";
+}
+
+.navMain {
+  grid-area: navbar;
+}
+.navLogo {
+  grid-area: logo;
+}
+.navLeft {
+  grid-area: navleft;
+}
+.navRight {
+  grid-area: navright;
+}
+.sidebar {
+  grid-area: sidebar;
+}

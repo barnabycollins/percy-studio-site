@@ -1,0 +1,16 @@
+.layoutRoot {
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".       content .      ";
+
+  padding-top: calc(
+    var(--navEdgePadding) * 2 + var(--navBorderThickness) * 2 +
+      var(--navThickness)
+  );
+}
+
+.main {
+  background: #ff0000;
+  grid-area: content;
+}

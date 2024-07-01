@@ -4,7 +4,7 @@
 const nextConfig = {
   output: "export",
   distDir: "dist",
-  basePath: "percy-studio-site",
+  basePath: "/percy-studio-site",
 
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,

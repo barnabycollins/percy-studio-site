@@ -7,12 +7,12 @@
   left: var(--navEdgePadding);
 
   display: grid;
-  grid-template-columns: var(--navThickness) 1fr 1200px 1fr var(--navThickness);
+  grid-template-columns: var(--navThickness) 1fr 1200px 1fr;
   grid-template-rows: var(--navThickness) 1fr;
 
   grid-template-areas:
-    "logo    navleft navbar  navright navright"
-    "sidebar .       .       .        .       ";
+    "logo    navleft navbar  navright"
+    "sidebar .       .       .       ";
 }
 
 .navMain {

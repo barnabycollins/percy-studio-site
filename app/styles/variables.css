@@ -1,0 +1,10 @@
+:root {
+  --navBorderColour: #cccccc;
+  --navEdgePadding: 30px;
+  --navThickness: 100px;
+  --navBorderThickness: 1px;
+
+  --navWidthFromEdge: calc(
+    var(--navEdgePadding) + 2 * var(--navBorderThickness) + var(--navThickness)
+  );
+}

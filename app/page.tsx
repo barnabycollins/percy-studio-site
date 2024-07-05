@@ -1,10 +1,9 @@
 import { Metadata } from "next";
-import "./variables.css";
 
 export const metadata: Metadata = {
   title: "Percy Community Centre Studio",
 };
 
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return <h1 style={{ paddingBottom: 3000 }}>Hello, Next.js!</h1>;
 }

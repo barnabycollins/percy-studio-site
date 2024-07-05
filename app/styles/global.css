@@ -1,0 +1,24 @@
+:root {
+  --background: #000000;
+  --text-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --background: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+
+  margin: 0;
+
+  transition:
+    background 0.3s,
+    color 1s;
+
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

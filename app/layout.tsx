@@ -1,7 +1,9 @@
 import { ThemeProvider } from "next-themes";
-import globalStyles from "./global.module.css";
 import layoutStyles from "./layout.module.css";
 import { MainNav } from "../components/Nav";
+import "./styles/global.css";
+import "./styles/font.css";
+import "./styles/variables.css";
 
 export default function RootLayout({
   children,
@@ -10,10 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={globalStyles.body}>
+      <body>
         <ThemeProvider>
+          <MainNav />
           <div className={layoutStyles.layoutRoot}>
-            <MainNav />
             <div className={layoutStyles.main}>{children}</div>
           </div>
         </ThemeProvider>

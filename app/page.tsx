@@ -1,9 +1,22 @@
 import { Metadata } from "next";
+import homepageContent from "../content/homepage";
+import { renderPageComponents } from "../components/pageComponents";
 
 export const metadata: Metadata = {
   title: "Percy Community Centre Studio",
 };
 
 export default function Page() {
-  return <h1 style={{ paddingBottom: 3000 }}>Hello, Next.js!</h1>;
+  return (
+    <>
+      {renderPageComponents(homepageContent)}
+      <div
+        style={{
+          background: "#003300",
+          borderTop: "10px solid #00ff00",
+          paddingBottom: "500vh",
+        }}
+      />
+    </>
+  );
 }

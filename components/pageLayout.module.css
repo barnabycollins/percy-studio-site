@@ -1,0 +1,16 @@
+.containerParent {
+  display: grid;
+  grid-template-columns: var(--navWidthFromEdge) 1fr 1200px 1fr var(
+      --navEdgePadding
+    );
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . content . .";
+}
+
+.container {
+  grid-area: content;
+}
+
+.topMargin {
+  padding-top: calc(var(--navEdgePadding) + var(--navWidthFromEdge));
+}

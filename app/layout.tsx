@@ -1,5 +1,4 @@
 import { ThemeProvider } from "next-themes";
-import layoutStyles from "./layout.module.css";
 import { MainNav } from "../components/Nav";
 import "./styles/global.css";
 import "./styles/font.css";
@@ -15,9 +14,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <MainNav />
-          <div className={layoutStyles.layoutRoot}>
-            <div className={layoutStyles.main}>{children}</div>
-          </div>
+          {children}
         </ThemeProvider>
       </body>
     </html>

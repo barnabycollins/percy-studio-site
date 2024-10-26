@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import navStyles from "./BorderBox.module.css";
+import { NavContext } from "./NavContext";
 
 type NavBorderBoxProps = {
   noBorder?: {

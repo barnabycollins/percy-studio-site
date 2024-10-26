@@ -2,12 +2,14 @@
   --background: #000000;
   --background-semitransparent: #000000aa;
   --text-color: #ffffff;
+  --transparent: #ffffff00;
 }
 
 [data-theme="light"] {
   --background: #ffffff;
   --background-semitransparent: #ffffff33;
   --text-color: #000000;
+  --transparent: #00000000;
 }
 
 body {

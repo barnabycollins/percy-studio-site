@@ -6,6 +6,8 @@ const nextConfig = {
   distDir: "dist",
   basePath: process.env.NODE_ENV === "development" ? "" : "/percy-studio-site",
 
+  images: { unoptimized: true },
+
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
 

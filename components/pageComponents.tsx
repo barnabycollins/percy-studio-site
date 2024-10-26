@@ -2,9 +2,14 @@ import pageLayoutStyles from "./pageLayout.module.css";
 import { PageComponentInput } from "../types/content";
 import { Header } from "./Header";
 import { Fragment } from "react";
+import { Equipment } from "./Equipment";
 
 export const pageComponentMapping = {
   Header: { component: Header, config: { contain: false, padIfAtTop: false } },
+  Equipment: {
+    component: Equipment,
+    config: { contain: true, padIfAtTop: true },
+  },
 } as Record<
   PageComponentInput["component"],
   {

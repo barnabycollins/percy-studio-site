@@ -26,6 +26,7 @@ export function Equipment({ title, categories }: EquipmentProps) {
             <Grid columns="1fr 1fr 1fr" gap="1em">
               {category.items.map((item, itemIndex) => {
                 const itemKey = `${categoryIndex},${itemIndex}`;
+
                 return (
                   <Grid.Item
                     key={item.title}
@@ -38,6 +39,7 @@ export function Equipment({ title, categories }: EquipmentProps) {
                     <button
                       style={{ all: "unset", cursor: "pointer" }}
                       onClick={() => toggleExpanded(itemKey)}
+                      aria-label={`Toggle ${item.title} details visibility`}
                     >
                       <Image
                         src={item.image}

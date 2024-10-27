@@ -37,7 +37,7 @@ const homepageContent: PageComponentInput[] = [
           icon: sm58,
           items: [
             {
-              title: "SE 2200a",
+              title: "sE Electronics 2200a",
               subtitle: "Large-diaphragm condenser mic",
               image: se2200a,
               blurb:

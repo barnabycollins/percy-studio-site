@@ -17,6 +17,7 @@ import bandit112 from "./media/bandit-112.jpg";
 import x32 from "./media/x32.png";
 import ec444 from "./media/ec-444.jpg";
 import shredmaster from "./media/shredmaster.jpg";
+import mike from "./media/mike.png";
 
 const homepageContent: PageComponentInput[] = [
   {
@@ -234,6 +235,25 @@ const homepageContent: PageComponentInput[] = [
               availableWithRehearsalBooking: true,
             },
           ],
+        },
+      ],
+    },
+  },
+  {
+    component: "Engineers",
+    content: {
+      title: "Engineers",
+      blurb: "cool guys.",
+      portfolioTitle: "Portfolio",
+      engineers: [
+        {
+          name: "Mike Smith",
+          photo: mike,
+          role: "Studio Manager",
+          skills: "Mixing, Mastering, Production",
+          blurb: "A really chill dude.",
+          portfolio: [],
+          socials: [],
         },
       ],
     },

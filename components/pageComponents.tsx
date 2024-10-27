@@ -3,11 +3,16 @@ import { PageComponentInput } from "../types/content";
 import { Header } from "./Header";
 import { Fragment } from "react";
 import { Equipment } from "./Equipment";
+import { Engineers } from "./Engineers";
 
 export const pageComponentMapping = {
   Header: { component: Header, config: { contain: false, padIfAtTop: false } },
   Equipment: {
     component: Equipment,
+    config: { contain: true, padIfAtTop: true },
+  },
+  Engineers: {
+    component: Engineers,
     config: { contain: true, padIfAtTop: true },
   },
 } as Record<

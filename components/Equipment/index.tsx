@@ -17,11 +17,16 @@ export function Equipment({ title, categories }: EquipmentProps) {
   }, []);
 
   return (
-    <div className="equipment" style={{ padding: "4em 0" }}>
-      <h2 style={{ marginTop: 0 }}>{title}</h2>
-      <Flex className="equipment" gap="3em" flexDirection="column">
+    <Flex
+      className="equipment"
+      flexDirection="column"
+      gap="2em"
+      style={{ padding: "4em 0" }}
+    >
+      <h2>{title}</h2>
+      <Flex className="equipment" flexDirection="column" gap="3em">
         {categories.map((category, categoryIndex) => (
-          <div key={category.title}>
+          <Flex key={category.title} flexDirection="column" gap="1em">
             <h3>{category.title}</h3>
             <Grid columns="1fr 1fr 1fr" gap="1em">
               {category.items.map((item, itemIndex) => {
@@ -63,7 +68,7 @@ export function Equipment({ title, categories }: EquipmentProps) {
                           background: "var(--background-transparent75)",
                         }}
                       >
-                        <h4 style={{ margin: 0 }}>
+                        <h4>
                           {item.title}
                           {item.quantity > 1 ? ` (x${item.quantity})` : ""}
                         </h4>
@@ -76,10 +81,10 @@ export function Equipment({ title, categories }: EquipmentProps) {
                             transition: "height 0.3s ease",
                           }}
                         >
-                          <h5 style={{ margin: 0, marginTop: "1em" }}>
+                          <h5 style={{ marginTop: "1em" }}>
                             {item.subtitle}; released {item.release}
                           </h5>
-                          <p style={{ margin: 0 }}>{item.blurb}</p>
+                          <p>{item.blurb}</p>
                         </Flex>
                       </div>
                     </button>
@@ -87,9 +92,9 @@ export function Equipment({ title, categories }: EquipmentProps) {
                 );
               })}
             </Grid>
-          </div>
+          </Flex>
         ))}
       </Flex>
-    </div>
+    </Flex>
   );
 }

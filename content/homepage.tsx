@@ -96,7 +96,8 @@ const homepageContent: PageComponentInput[] = [
               title: "Bontempi BN8",
               subtitle: "Reed organ",
               image: bontempi,
-              blurb: "A classic banger from the 70s.",
+              blurb:
+                "Although not always entirely in tune, this classic from 1980s European instution Bontempi has a quirky sound and is a great source of inspiration!",
               release: "in the 1970s",
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -116,7 +117,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Classic workstation keyboard",
               image: xp80,
               blurb:
-                "A powerful workstation keyboard, with hundrends of quality patches, a full-featured sequencer and up to 64-note polyphony.",
+                "A powerful workstation keyboard, with hundreds of quality patches, a full-featured sequencer and up to 64-note polyphony.",
               release: 1996,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -227,7 +228,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Classic distortion pedal",
               image: shredmaster,
               blurb:
-                "Famously favoured by Radiohead's Jonny Greenwood, this drive pedal is capable of dark, gentle saturation as well as the full-blown distorted chaos implied by its name.",
+                "Famously used by Radiohead's Jonny Greenwood, this drive pedal is capable of dark, gentle saturation as well as the full-blown distorted chaos implied by its name.",
               release: 1991,
               quantity: 1,
               availableWithRehearsalBooking: true,

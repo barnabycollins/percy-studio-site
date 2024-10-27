@@ -1,15 +1,15 @@
 :root {
   --background: #000000;
   --background-semitransparent: #000000aa;
+  --background-transparent75: #000000cf;
   --text-color: #ffffff;
-  --transparent: #ffffff00;
 }
 
 [data-theme="light"] {
   --background: #ffffff;
   --background-semitransparent: #ffffff33;
+  --background-transparent75: #ffffffcf;
   --text-color: #000000;
-  --transparent: #00000000;
 }
 
 body {

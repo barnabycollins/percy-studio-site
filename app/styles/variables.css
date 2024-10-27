@@ -1,5 +1,5 @@
 :root {
-  --navBorderColour: #cccccc;
+  --navBorderColour: var(--text-color);
   --navEdgePadding: 30px;
   --navThickness: 100px;
   --navBorderThickness: 1px;

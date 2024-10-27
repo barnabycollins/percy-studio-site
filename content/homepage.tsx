@@ -18,6 +18,8 @@ import x32 from "./media/x32.png";
 import ec444 from "./media/ec-444.jpg";
 import shredmaster from "./media/shredmaster.jpg";
 import mike from "./media/mike.png";
+import barnaby from "./media/barnaby.png";
+import engineerStock from "./media/engineer-stock.webp";
 
 const homepageContent: PageComponentInput[] = [
   {
@@ -42,7 +44,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Large-diaphragm condenser mic",
               image: se2200a,
               blurb:
-                "A modern classic studio workhorse, with a smooth high end.",
+                "A modern classic microphone, based on sE's first big success. Built for vocals, but great for a range of uses with a silky smooth high end.",
               release: 2004,
               quantity: 1,
               availableWithRehearsalBooking: false,
@@ -52,8 +54,18 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Large-diaphragm condenser mic",
               image: nt1a,
               blurb:
-                "One of the most popular large-diaphragm condensers of all time, with a bright and sibilant high end.",
+                "One of the most popular large-diaphragm condensers of all time, with a bright and sibilant sound and a very low self-noise characteristic.",
               release: 2003,
+              quantity: 2,
+              availableWithRehearsalBooking: false,
+            },
+            {
+              title: "Shure SM57",
+              subtitle: "Dynamic instrument mic",
+              image: sm57,
+              blurb:
+                "Groundbreaking in 1965 and still well-loved for high-SPL instruments today. Famously used on snare drums, guitar amps, and every US president since 1965.",
+              release: 1965,
               quantity: 2,
               availableWithRehearsalBooking: false,
             },
@@ -62,27 +74,17 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Dynamic vocal mic",
               image: sm58,
               blurb:
-                "Possibly the best-selling vocal microphone of all time, renowned for its durability and sound quality.",
+                "Based on the SM57, this is possibly the best-selling vocal microphone of all time. Renowned for its durability, reliability and sound quality.",
               release: 1966,
               quantity: 2,
               availableWithRehearsalBooking: true,
             },
             {
-              title: "Shure SM57",
-              subtitle: "Dynamic instrument mic",
-              image: sm57,
-              blurb:
-                "Famously used on snare drums, guitar amps, and every US president since 1965.",
-              release: 1965,
-              quantity: 2,
-              availableWithRehearsalBooking: false,
-            },
-            {
-              title: "Shure PGDMK6XLR",
+              title: "Shure PGDMK6-XLR",
               subtitle: "6-piece drum microphone kit",
               image: pgdmk6xlr,
               blurb:
-                "A full set of quality drum mics, which a fantastic sound straight out of the box on our kit.",
+                "A full set of quality drum mics, with a fantastic sound straight out of the box on our kit. The PG52 kick mic and PG81 small-diaphragm condensers are also useful in their own right.",
               release: 2006,
               quantity: 1,
               availableWithRehearsalBooking: false,
@@ -98,7 +100,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Reed organ",
               image: bontempi,
               blurb:
-                "Although not always entirely in tune, this classic from 1980s European instution Bontempi has a quirky sound and is a great source of inspiration!",
+                "Although not always entirely in tune, this classic from 1980s European instution Bontempi has a quirky design and is a great source of inspiration!",
               release: "in the 1970s",
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -108,17 +110,17 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Analogue monosynth",
               image: minibrute,
               blurb:
-                "An incredibly flexible analogue synthesiser, capable of everything from growling basses to satisfying leads.",
+                "An incredibly flexible analogue synthesiser, capable of everything from growling basses to clean sine leads. An LFO, two envelopes and some unique tools such as the 'metallizer' give users a lot of options.",
               release: 2012,
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
             {
-              title: "Roland XP80",
-              subtitle: "Classic workstation keyboard",
+              title: "Roland XP-80",
+              subtitle: "Classic arranger keyboard",
               image: xp80,
               blurb:
-                "A powerful workstation keyboard, with hundreds of quality patches, a full-featured sequencer and up to 64-note polyphony.",
+                "A powerful workstation / arranger keyboard from 1996, with hundreds of classic Roland patches, a full-featured sequencer and up to 64-note polyphony. Floppy disks not included.",
               release: 1996,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -134,7 +136,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Digital modelling guitar amplifier",
               image: vt50,
               blurb:
-                "A digital modelling engine gives this amp a huge range of possible sounds, with 22 amp models and addictively tweakable EQ and effects.",
+                "A comprehensive digital modelling engine gives this amp a huge range of possible sounds, with 22 realistic amp models and addictively tweakable effects.",
               release: 2008,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -144,7 +146,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Powered PA mixer",
               image: xr884f,
               blurb:
-                "Perfect for band rehearsals, this intuitive yet full-featured mixer drives the main speaker system in our live room.",
+                "Features such as feedback suppression, graphic EQ and straightforward digital FX make this mixer perfect for band rehearsals. We use this mixer to run the main PA in our live room.",
               release: 2002,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -154,7 +156,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Bass amplifier",
               image: ed300,
               blurb:
-                "Originally designed for electronic drum systems, this 1980s amplifier is a popular choice for many of our bass players.",
+                "Originally designed for electronic drum systems in the 1980s, this hefty amplifier has a neutral sound signature and is a popular choice for many of our bass players.",
               release: 1987,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -164,7 +166,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Bass amp head",
               image: dbs7200,
               blurb:
-                "A well-respected bass head, with two mixable preamps (valve + solid-state), a carefully-thought-through EQ, and an in-built compressor.",
+                "A well-respected and powerful bass head, with two mixable preamps (valve + solid-state), and an in-built compressor. The in-built EQ was clearly designed by bassists, for bassists.",
               release: 1994,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -173,7 +175,7 @@ const homepageContent: PageComponentInput[] = [
               title: "Peavey 1820",
               subtitle: "Bass amp cab",
               image: peavey1820,
-              blurb: `With a massive 18" subwoofer driver, this cab is kept connected to the DBS7200. When combined, they can make the whole community centre shake.`,
+              blurb: `With a massive 18" 'Black Widow' driver, this huge and heavy cab is usually connected to the DBS7200. When they're in use, the whole community centre knows about it.`,
               release: "in the early 1980s",
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -243,17 +245,94 @@ const homepageContent: PageComponentInput[] = [
     component: "Engineers",
     content: {
       title: "Engineers",
-      blurb: "cool guys.",
-      portfolioTitle: "Portfolio",
+      background: engineerStock,
+      blurb:
+        "We have a number of highly-skilled in-house engineers, who are mostly cool dudes.",
+      portfolioTitle: "Projects",
       engineers: [
         {
           name: "Mike Smith",
           photo: mike,
           role: "Studio Manager",
-          skills: "Mixing, Mastering, Production",
-          blurb: "A really chill dude.",
-          portfolio: [],
-          socials: [],
+          skills: [
+            "Music Production",
+            "Sound Design",
+            "Mixing",
+            "Mastering",
+            "Radio",
+          ],
+          blurb: `Mike has been a fixture of the Bath music scene for over 25 years as a singer, producer, DJ and promoter
+            across the punk and electronic music subcultures. He has decades of gigs, tours and festivals across the UK,
+            Europe and America under his belt, plus nearly a dozen music collectives and bands.
+            <br>
+            He then moved into production, completing two degrees in Creative Music Technology and Sound Production at
+            Bath Spa University and working on a number of ambitious projects both on his own and with other collaborators.
+            He also has been heavily involved in the local Frome FM radio station for over 10 years, and still holds a monthly
+            slot with his show, Basement 7.`,
+          portfolio: [
+            {
+              label: "Basement 7",
+              link: "https://www.frome.fm/programmes/basement-7",
+            },
+          ],
+          socials: [
+            {
+              platform: "soundcloud",
+              link: "https://soundcloud.com/mazysmith1",
+            },
+            {
+              platform: "soundcloud",
+              link: "https://soundcloud.com/general-e-mixes",
+            },
+            {
+              platform: "other",
+              label: "Website",
+              link: "https://generalesmith.blogspot.com",
+            },
+          ],
+        },
+        {
+          name: "Barnaby Collins",
+          photo: barnaby,
+          role: "Volunteer Assistant Manager",
+          skills: [
+            "Acoustic Instruments",
+            "Live Sound",
+            "Composition",
+            "Electronics & Repair",
+          ],
+          blurb: `Barnaby's passion for music began with deafening his parents with a recorder at the age of 6. He has
+            played clarinet for over 15 years, has been teaching himself drums for 7 years, started DJing 6 years ago
+            and spent three years building a reputation as Durham's best live sound engineer whilst at university.
+            He now plays clarinet, bass clarinet, drums, Akai EWI and occasionally fiddles about on his Novation Circuit.
+            <br>
+            Having moved to Bath with his partner, he is now co-running the studio with Mike around his day job as a
+            software engineer. His live sound skills complement Mike's production abilities in the studio, and his passion
+            for DIY and repair helps keep everything in working order for the studio's users.
+            <br>
+            He is also involved with a number of local orchestras and charities, including producing 3-4 arrangements per
+            year and managing recordings for the local BathTub Orchestra.`,
+          portfolio: [
+            {
+              label:
+                "BathTub Orchestra at Christchurch Bath - Recording & Production",
+              link: "https://youtu.be/2I_Pz1UG8u0",
+            },
+            {
+              label: "Novation Circuit one-take performance - 'Solitude'",
+              link: "https://youtu.be/OP8WOKaNxQw?t=1016",
+            },
+            {
+              label: "Orchestral arrangements",
+              link: "https://musescore.com/user/6601531",
+            },
+          ],
+          socials: [
+            {
+              platform: "mixcloud",
+              link: "https://www.mixcloud.com/barnabycollins",
+            },
+          ],
         },
       ],
     },

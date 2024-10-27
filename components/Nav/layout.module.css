@@ -6,6 +6,8 @@
   bottom: var(--navEdgePadding);
   left: var(--navEdgePadding);
 
+  z-index: 100;
+
   display: grid;
   grid-template-columns: var(--navThickness) 1fr 1200px 1fr;
   grid-template-rows: var(--navThickness) 1fr;

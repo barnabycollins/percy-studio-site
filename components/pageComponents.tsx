@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { Fragment } from "react";
 import { Equipment } from "./Equipment";
 import { Engineers } from "./Engineers";
+import Image, { StaticImageData } from "next/image";
 
 export const pageComponentMapping = {
   Header: { component: Header, config: { contain: false, padIfAtTop: false } },
@@ -34,8 +35,43 @@ export function renderPageComponents(components: PageComponentInput[]) {
 
         if (config.contain) {
           nodeToReturn = (
-            <div className={pageLayoutStyles.containerParent}>
-              <div className={pageLayoutStyles.container}>{nodeToReturn}</div>
+            <div
+              className={pageLayoutStyles.containerParent}
+              style={{ position: "relative" }}
+            >
+              {"background" in content && content.background ? (
+                <>
+                  <Image
+                    src={content.background}
+                    alt="Background image"
+                    style={{
+                      zIndex: -1,
+                      objectFit: "cover",
+                      position: "absolute",
+                      top: 0,
+                      right: 0,
+                      bottom: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                  <div
+                    style={{
+                      background: "var(--background-transparent75)",
+                      position: "absolute",
+                      top: 0,
+                      right: 0,
+                      bottom: 0,
+                      left: 0,
+                      zIndex: 0,
+                    }}
+                  />
+                </>
+              ) : null}
+              <div className={pageLayoutStyles.container} style={{ zIndex: 1 }}>
+                {nodeToReturn}
+              </div>
             </div>
           );
         }

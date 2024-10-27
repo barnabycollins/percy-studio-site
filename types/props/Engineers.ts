@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 export type EngineersProps = {
   title: string;
+  background?: StaticImageData;
   blurb: string;
   portfolioTitle: string;
 
@@ -9,23 +10,29 @@ export type EngineersProps = {
     name: string;
     photo: StaticImageData;
     role: string;
-    skills: string;
+    skills: string[];
     blurb: string;
     portfolio: {
       label: string;
       link: string;
       icon?: StaticImageData;
     }[];
-    socials: {
+    socials: ({
       link: string;
-      platform:
-        | "soundcloud"
-        | "mixcloud"
-        | "bandcamp"
-        | "facebook"
-        | "instagram"
-        | "musescore"
-        | "website";
-    }[];
+    } & (
+      | {
+          platform:
+            | "soundcloud"
+            | "mixcloud"
+            | "bandcamp"
+            | "facebook"
+            | "instagram"
+            | "linkedin";
+        }
+      | {
+          platform: "other";
+          label: string;
+        }
+    ))[];
   }[];
 };

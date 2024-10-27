@@ -42,7 +42,7 @@ export function Equipment({ title, categories }: EquipmentProps) {
                     }}
                   >
                     <button
-                      style={{ all: "unset", cursor: "pointer" }}
+                      style={{ all: "unset", cursor: "pointer", zIndex: 10 }}
                       onClick={() => toggleExpanded(itemKey)}
                       aria-label={`Toggle ${item.title} details visibility`}
                     >
@@ -66,6 +66,7 @@ export function Equipment({ title, categories }: EquipmentProps) {
                           padding: "1em 2em",
                           height: "100%",
                           background: "var(--background-transparent75)",
+                          zIndex: 1,
                         }}
                       >
                         <h4>
@@ -81,9 +82,9 @@ export function Equipment({ title, categories }: EquipmentProps) {
                             transition: "height 0.3s ease",
                           }}
                         >
-                          <h5 style={{ marginTop: "1em" }}>
+                          <p style={{ marginTop: "1em", fontStyle: "italic" }}>
                             {item.subtitle}; released {item.release}
-                          </h5>
+                          </p>
                           <p>{item.blurb}</p>
                         </Flex>
                       </div>

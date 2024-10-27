@@ -6,7 +6,6 @@ import { RightNav } from "./Right";
 import { NavSidebar } from "./Sidebar";
 import { NavSpacer } from "./Spacer";
 import layoutStyles from "./layout.module.css";
-import { NavContext } from "./NavContext";
 
 const Nav = {
   Logo: NavLogo,

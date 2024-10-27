@@ -14,20 +14,23 @@ import dbs7200 from "./media/dbs7200.webp";
 import peavey1820 from "./media/peavey-1820.webp";
 import a100 from "./media/a100.jpg";
 import bandit112 from "./media/bandit-112.jpg";
+import x32 from "./media/x32.png";
+import ec444 from "./media/ec-444.jpg";
+import shredmaster from "./media/shredmaster.jpg";
 
 const homepageContent: PageComponentInput[] = [
   {
     component: "Header",
     content: {
-      title: "henlo",
-      subtitle: "yes",
+      title: "Title",
+      subtitle: "Subtitle",
       videoUrl: "https://percystudiobath.github.io/media/montage.webm",
     },
   },
   {
     component: "Equipment",
     content: {
-      title: "yeet",
+      title: "Equipment",
       categories: [
         {
           title: "Microphones",
@@ -187,8 +190,45 @@ const homepageContent: PageComponentInput[] = [
               title: "Peavey Bandit 112",
               subtitle: "Guitar combo amp",
               image: bandit112,
-              blurb: "Built upon Peavey's classic Transtube circuit, this amp ",
+              blurb:
+                "The first amp to boast Peavey's classic Transtube circuit, this analogue amp is known for a great clean sound as well as a 'T-Dynamics' control that adds a bit of tube-like grit.",
               release: 1995,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+          ],
+        },
+        {
+          title: "Recording and effects",
+          icon: x32,
+          items: [
+            {
+              title: "Behringer X32",
+              subtitle: "Digital mixer",
+              image: x32,
+              blurb:
+                "A modern classic mixer with very clean preamps and a great interface. The X32 allows us to record up to 32 channels simultaneously, and produce up to 8 separate wirelessly-controlled monitor mixes.",
+              release: 2012,
+              quantity: 1,
+              availableWithRehearsalBooking: false,
+            },
+            {
+              title: "Maplin Echorder EC444",
+              subtitle: "Analogue delay unit",
+              image: ec444,
+              blurb:
+                "Affectionately nicknamed 'the source of existential dread' at our youth group, this delay can produce beautiful analogue soundscapes as well as gritty self-oscillation when feedback is turned above 100%.",
+              release: "in the 1980s",
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Marshall Shredmaster",
+              subtitle: "Classic distortion pedal",
+              image: shredmaster,
+              blurb:
+                "Famously favoured by Radiohead's Jonny Greenwood, this drive pedal is capable of dark, gentle saturation as well as the full-blown distorted chaos implied by its name.",
+              release: 1991,
               quantity: 1,
               availableWithRehearsalBooking: true,
             },

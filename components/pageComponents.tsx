@@ -22,9 +22,10 @@ export function renderPageComponents(components: PageComponentInput[]) {
   return (
     <main>
       {components.map(({ component: componentName, content }, index) => {
-        const { component, config } = pageComponentMapping[componentName];
+        const { component: Component, config } =
+          pageComponentMapping[componentName];
 
-        let nodeToReturn = component({ ...content });
+        let nodeToReturn = <Component {...content} />;
 
         if (config.contain) {
           nodeToReturn = (

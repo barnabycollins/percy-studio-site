@@ -20,6 +20,7 @@ import shredmaster from "./media/shredmaster.jpg";
 import mike from "./media/mike.png";
 import barnaby from "./media/barnaby.png";
 import engineerStock from "./media/engineer-stock.webp";
+import fadersStock from "./media/faders.jpg";
 
 const homepageContent: PageComponentInput[] = [
   {
@@ -34,6 +35,7 @@ const homepageContent: PageComponentInput[] = [
     component: "Equipment",
     content: {
       title: "Equipment",
+      background: fadersStock,
       categories: [
         {
           title: "Microphones",

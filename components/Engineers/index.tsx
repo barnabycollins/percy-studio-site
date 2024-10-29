@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Flex from "@react-css/flex";
 import { EngineersProps } from "../../types/props/Engineers";
+import { borderBoxStyles } from "../../constants/styles";
 
 export function Engineers({
   title,
@@ -13,16 +14,7 @@ export function Engineers({
   return (
     <div className="engineers">
       <Flex flexDirection="column" gap="2em" style={{ padding: "4em 0" }}>
-        <Flex
-          flexDirection="column"
-          gap="0.5em"
-          style={{
-            border: "1px solid var(--text-color)",
-            boxSizing: "border-box",
-            background: "var(--background-transparent75",
-            padding: "1em",
-          }}
-        >
+        <Flex flexDirection="column" gap="0.5em" style={borderBoxStyles}>
           <h2>{title}</h2>
           <p>{blurb}</p>
         </Flex>
@@ -41,12 +33,7 @@ export function Engineers({
               flexDirection="column"
               gap="1em"
               justifyCenter
-              style={{
-                border: "1px solid var(--text-color)",
-                boxSizing: "border-box",
-                background: "var(--background-transparent75)",
-                padding: "1em",
-              }}
+              style={borderBoxStyles}
             >
               <Flex justifySpaceBetween alignItemsCenter>
                 <h3>{engineer.name}</h3>

@@ -28,13 +28,15 @@ export function Header({ title, subtitle, videoUrl }: HeaderProps) {
         />
       </div>
       <div
-        className={`${pageLayoutStyles.containerParent} ${pageLayoutStyles.topMargin}`}
+        className={pageLayoutStyles.containerParent}
         style={{
           background: "var(--background-semitransparent)",
           height: "100%",
         }}
       >
-        <div className={pageLayoutStyles.container}>
+        <div
+          className={`${pageLayoutStyles.container} ${pageLayoutStyles.topMargin}`}
+        >
           <h1>{title}</h1>
           <h2>{subtitle}</h2>
         </div>

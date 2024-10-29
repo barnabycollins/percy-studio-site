@@ -24,6 +24,11 @@
 }
 .navLogo {
   grid-area: logo;
+
+  .navLogoImg {
+    width: calc(var(--navThickness) * 0.7);
+    height: calc(var(--navThickness) * 0.7);
+  }
 }
 .navLeft {
   grid-area: navleft;

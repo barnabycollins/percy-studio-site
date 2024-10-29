@@ -27,8 +27,13 @@ body {
 
 * {
   transition:
-    background 0.3s,
+    border 1s,
+    background-color 0.3s,
     color 1s;
+}
+
+svg {
+  fill: currentColor;
 }
 
 h1,

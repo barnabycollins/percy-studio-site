@@ -4,7 +4,7 @@ import { Header } from "./Header";
 import { Fragment } from "react";
 import { Equipment } from "./Equipment";
 import { Engineers } from "./Engineers";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 export const pageComponentMapping = {
   Header: { component: Header, config: { contain: false, padIfAtTop: false } },

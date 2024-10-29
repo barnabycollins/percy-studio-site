@@ -13,4 +13,5 @@
 
 .topMargin {
   padding-top: calc(var(--navEdgePadding) + var(--navWidthFromEdge));
+  box-sizing: border-box;
 }

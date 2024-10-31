@@ -21,6 +21,8 @@ import mike from "./media/mike.png";
 import barnaby from "./media/barnaby.png";
 import engineerStock from "./media/engineer-stock.webp";
 import fadersStock from "./media/faders.jpg";
+import stratocaster from "./media/stratocaster.webp";
+import rochester from "./media/rochester.jpg";
 
 const homepageContent: PageComponentInput[] = [
   {
@@ -98,12 +100,30 @@ const homepageContent: PageComponentInput[] = [
           icon: bontempi,
           items: [
             {
-              title: "Bontempi BN8",
-              subtitle: "Reed organ",
-              image: bontempi,
+              title: "Squier Stratocaster",
+              subtitle: "Electric guitar",
+              image: stratocaster,
               blurb:
-                "Although not always entirely in tune, this classic from 1980s European instution Bontempi has a quirky design and is a great source of inspiration!",
-              release: "in the 1970s",
+                "An original 'Made in Japan' Squier, built in the mid 80s.",
+              release: 1982,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Ibanez Blazer Bass",
+              subtitle: "Electric Bass",
+              image: stratocaster,
+              blurb: "An original, built in September 1982.",
+              release: 1981,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Kramer Focus 111S (left-handed)",
+              subtitle: "Left-handed strat-style electric guitar",
+              image: stratocaster,
+              blurb: "",
+              release: 2004,
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
@@ -118,12 +138,40 @@ const homepageContent: PageComponentInput[] = [
               availableWithRehearsalBooking: true,
             },
             {
+              title: "Bontempi BN8",
+              subtitle: "Reed organ",
+              image: bontempi,
+              blurb:
+                "Although not always entirely in tune, this classic from 1980s European instution Bontempi has a quirky design and is a great source of inspiration!",
+              release: "in the 1970s",
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
               title: "Roland XP-80",
               subtitle: "Classic arranger keyboard",
               image: xp80,
               blurb:
                 "A powerful workstation / arranger keyboard from 1996, with hundreds of classic Roland patches, a full-featured sequencer and up to 64-note polyphony. Floppy disks not included.",
               release: 1996,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Conrad Stratocaster",
+              subtitle: "Entry-level electric guitar",
+              image: stratocaster,
+              blurb: "",
+              release: "unknown",
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Rochester A1 Cadete",
+              subtitle: "Entry-level acoustic guitar",
+              image: rochester,
+              blurb: "",
+              release: "unknown",
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
@@ -238,6 +286,16 @@ const homepageContent: PageComponentInput[] = [
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
+          ],
+        },
+        {
+          title: "Production and Monitoring",
+          icon: x32,
+          items: [
+            // oxygen 25
+            // keystudio
+            // hr824 mk2
+            // dt 770 pro 250 ohm
           ],
         },
       ],

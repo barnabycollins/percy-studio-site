@@ -337,6 +337,15 @@ const homepageContent: PageComponentInput[] = [
               quantity: 1,
               availableWithRehearsalBooking: false,
             },
+            {
+              title: "Altai HS-400",
+              subtitle: "Really epic and good quality headphones",
+              image: shredmaster,
+              blurb: "Hand built by monks in German monasteries",
+              release: 2006,
+              quantity: 2,
+              availableWithRehearsalBooking: true,
+            },
             // oxygen 25
             // keystudio
             // hr824 mk2

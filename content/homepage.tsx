@@ -292,6 +292,51 @@ const homepageContent: PageComponentInput[] = [
           title: "Production and Monitoring",
           icon: x32,
           items: [
+            {
+              title: "Sennheiser HD 280 Pro",
+              subtitle: "Studio monitoring headphones",
+              image: shredmaster,
+              blurb: "headphones innit",
+              release: 2057,
+              quantity: 6,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Sennheiser HD 202",
+              subtitle: "Monitoring headphones",
+              image: shredmaster,
+              blurb: "headphones innit",
+              release: 2058,
+              quantity: 4,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Sennheiser HD 201",
+              subtitle: "Monitoring headphones",
+              image: shredmaster,
+              blurb: "headphones innit",
+              release: 2059,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Beyerdynamic DT 100",
+              subtitle: "Classic monitoring headphones",
+              image: shredmaster,
+              blurb: "old headphones innit",
+              release: 1574,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
+              title: "Beyerdynamic DT 770 Pro 250 Ohm",
+              subtitle: "Monitoring headphones",
+              image: shredmaster,
+              blurb: "headphones innit",
+              release: 2096,
+              quantity: 1,
+              availableWithRehearsalBooking: false,
+            },
             // oxygen 25
             // keystudio
             // hr824 mk2

@@ -23,6 +23,18 @@ import engineerStock from "./media/engineer-stock.webp";
 import fadersStock from "./media/faders.jpg";
 import stratocaster from "./media/stratocaster.webp";
 import rochester from "./media/rochester.jpg";
+import oxygen25 from "./media/oxygen25.jpg";
+import keystudio from "./media/keystudio.jpg";
+import hr824mk2 from "./media/mackie-hr824-mk2.jpg";
+import dt770pro from "./media/dt770pro.webp";
+import hd280pro from "./media/hd280pro.avif";
+import hd202 from "./media/hd202.jpg";
+import dt100 from "./media/dt100.jpg";
+import di800 from "./media/di800.webp";
+import ha8000 from "./media/ha8000.jpg";
+import blazer from "./media/blazer bass.webp";
+import focus111s from "./media/focus 111s.webp";
+import conrad from "./media/conrad.jpg";
 
 const homepageContent: PageComponentInput[] = [
   {
@@ -104,7 +116,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Electric guitar",
               image: stratocaster,
               blurb:
-                "An original 'Made in Japan' Squier, built in the mid 80s.",
+                "An original 'Made in Japan' Squier, built in the mid 80s to serve as a reissue of the classic 50s and 60s Fender Strats.",
               release: 1982,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -112,18 +124,20 @@ const homepageContent: PageComponentInput[] = [
             {
               title: "Ibanez Blazer Bass",
               subtitle: "Electric Bass",
-              image: stratocaster,
-              blurb: "An original, built in September 1982.",
+              image: blazer,
+              blurb:
+                "An original Blazer, built in September 1982 and carefully looked after since then. These basses are known to keep going forever, and to be incredibly versatile with a deliciously rich tone.",
               release: 1981,
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
             {
               title: "Kramer Focus 111S (left-handed)",
-              subtitle: "Left-handed strat-style electric guitar",
-              image: stratocaster,
-              blurb: "",
-              release: 2004,
+              subtitle: "Left-handed strat-style electric",
+              image: focus111s,
+              blurb:
+                "The Focus 111S is generally agreed to be a great entry-level strat, and ours is in very good condition, having been donated by a caring owner.",
+              release: 1987,
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
@@ -132,7 +146,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Analogue monosynth",
               image: minibrute,
               blurb:
-                "An incredibly flexible analogue synthesiser, capable of everything from growling basses to clean sine leads. An LFO, two envelopes and some unique tools such as the 'metallizer' give users a lot of options.",
+                "A powerful analogue synthesiser, capable of everything from growling basses to clean sine leads. An LFO, two envelopes and some unique tools give users a lot of sound-shaping options.",
               release: 2012,
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -160,8 +174,9 @@ const homepageContent: PageComponentInput[] = [
             {
               title: "Conrad Stratocaster",
               subtitle: "Entry-level electric guitar",
-              image: stratocaster,
-              blurb: "",
+              image: conrad,
+              blurb:
+                "A basic but well-built strat. The Conrad definitely plays second fiddle to our Squier strat, but it's still got a solid tone and is great for rehearsals.",
               release: "unknown",
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -170,7 +185,8 @@ const homepageContent: PageComponentInput[] = [
               title: "Rochester A1 Cadete",
               subtitle: "Entry-level acoustic guitar",
               image: rochester,
-              blurb: "",
+              blurb:
+                "Although the A1 Cadete is a relatively basic acoustic, ours has a lovely rose drawing on it from a previous owner which adds at least 70% more vibe.",
               release: "unknown",
               quantity: 1,
               availableWithRehearsalBooking: true,
@@ -286,6 +302,16 @@ const homepageContent: PageComponentInput[] = [
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
+            {
+              title: "Behringer DI800",
+              subtitle: "8-channel DI",
+              image: di800,
+              blurb:
+                "Kept in our live room, the DI800 is perfect for recording instruments directly, from stringed pickup instruments to keyboards and other unbalanced line level signals.",
+              release: 2006,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
           ],
         },
         {
@@ -293,63 +319,103 @@ const homepageContent: PageComponentInput[] = [
           icon: x32,
           items: [
             {
+              title: "M-Audio Oxygen 25 Mk IV",
+              subtitle: "Multifunctional MIDI controller",
+              image: oxygen25,
+              blurb:
+                "A modern and full-featured MIDI controller, complete with transport buttons, 8 knobs and 8 drum pads.",
+              release: 2017,
+              quantity: 1,
+              availableWithRehearsalBooking: false,
+            },
+            {
+              title: "M-Audio Keystudio",
+              subtitle: "Large MIDI keyboard",
+              image: keystudio,
+              blurb:
+                "This is the main keyboard in our control room, with ample range to track in more complex parts in Logic.",
+              release: 2008,
+              quantity: 1,
+              availableWithRehearsalBooking: false,
+            },
+            {
+              title: "Mackie HR824 Mk2",
+              subtitle: "Studio monitor speaker",
+              image: hr824mk2,
+              blurb:
+                "These chunky monitors are the main reference speakers in our control room. They've been calibrated with Sonarworks SoundID Reference to ensure accuracy in our particular room.",
+              release: 2007,
+              quantity: 2,
+              availableWithRehearsalBooking: false,
+            },
+            {
+              title: "Beyerdynamic DT 770 Pro 250 Ohm",
+              subtitle: "Closed-back studio headphones",
+              image: dt770pro,
+              blurb:
+                "Unchanged for 40 years, these iconic headphones are the top-selling studio headphones for a reason. They are particularly well-known for their bright and detailed high-end.",
+              release: 1985,
+              quantity: 1,
+              availableWithRehearsalBooking: false,
+            },
+            {
               title: "Sennheiser HD 280 Pro",
               subtitle: "Studio monitoring headphones",
-              image: shredmaster,
-              blurb: "headphones innit",
-              release: 2057,
+              image: hd280pro,
+              blurb:
+                "These quality headphones are our go-to for tracking. They have great isolation, accurate sound, and they are more or less indestructible.",
+              release: 2003,
               quantity: 6,
               availableWithRehearsalBooking: true,
             },
             {
               title: "Sennheiser HD 202",
               subtitle: "Monitoring headphones",
-              image: shredmaster,
-              blurb: "headphones innit",
-              release: 2058,
+              image: hd202,
+              blurb:
+                "These headphones are a little lighter on the head than our other monitoring options, whilst still retaining good sound quality and an over-ear configuration.",
+              release: 2006,
               quantity: 4,
               availableWithRehearsalBooking: true,
             },
-            {
-              title: "Sennheiser HD 201",
-              subtitle: "Monitoring headphones",
-              image: shredmaster,
-              blurb: "headphones innit",
-              release: 2059,
-              quantity: 1,
-              availableWithRehearsalBooking: true,
-            },
+            // {
+            //   title: "Sennheiser HD 201",
+            //   subtitle: "Monitoring headphones",
+            //   image: shredmaster,
+            //   blurb: "headphones innit",
+            //   release: 2059,
+            //   quantity: 1,
+            //   availableWithRehearsalBooking: true,
+            // },
             {
               title: "Beyerdynamic DT 100",
-              subtitle: "Classic monitoring headphones",
-              image: shredmaster,
-              blurb: "old headphones innit",
-              release: 1574,
+              subtitle: "Studio monitoring headphones",
+              image: dt100,
+              blurb:
+                "A classic standby in recording studios worldwide, the DT 100 and its variations have a proven track record and have been used by many of the world's top acts since the time of the Beatles.",
+              release: 1960,
               quantity: 1,
               availableWithRehearsalBooking: true,
             },
+            // {
+            //   title: "Altai HS-400",
+            //   subtitle: "Really epic and good quality headphones",
+            //   image: shredmaster,
+            //   blurb: "Hand built by silent monks in German monasteries",
+            //   release: 2006,
+            //   quantity: 2,
+            //   availableWithRehearsalBooking: true,
+            // },
             {
-              title: "Beyerdynamic DT 770 Pro 250 Ohm",
-              subtitle: "Monitoring headphones",
-              image: shredmaster,
-              blurb: "headphones innit",
-              release: 2096,
+              title: "Behringer HA8000",
+              subtitle: "8-channel headphone amplifier",
+              image: ha8000,
+              blurb:
+                "Our HA8000 lives in our live room, where we use it to send separate monitor mixes for up to 8 performers in parallel.",
+              release: 2007,
               quantity: 1,
-              availableWithRehearsalBooking: false,
-            },
-            {
-              title: "Altai HS-400",
-              subtitle: "Really epic and good quality headphones",
-              image: shredmaster,
-              blurb: "Hand built by monks in German monasteries",
-              release: 2006,
-              quantity: 2,
               availableWithRehearsalBooking: true,
             },
-            // oxygen 25
-            // keystudio
-            // hr824 mk2
-            // dt 770 pro 250 ohm
           ],
         },
       ],

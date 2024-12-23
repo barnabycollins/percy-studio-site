@@ -35,6 +35,7 @@ import ha8000 from "./media/ha8000.jpg";
 import blazer from "./media/blazer bass.webp";
 import focus111s from "./media/focus 111s.webp";
 import conrad from "./media/conrad.jpg";
+import megabass from "./media/megabass.webp";
 
 const homepageContent: PageComponentInput[] = [
   {
@@ -238,6 +239,16 @@ const homepageContent: PageComponentInput[] = [
               availableWithRehearsalBooking: true,
             },
             {
+              title: "Peavey MegaBass",
+              subtitle: "Bass amp head",
+              image: megabass,
+              blurb:
+                "A popular digital bass amplifier, with separate 200W outputs for high and low, configurable crossover and a chorus on the high channel. It also takes low-impedance inputs over XLR.",
+              release: 1988,
+              quantity: 1,
+              availableWithRehearsalBooking: true,
+            },
+            {
               title: "Peavey 1820",
               subtitle: "Bass amp cab",
               image: peavey1820,
@@ -323,7 +334,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Multifunctional MIDI controller",
               image: oxygen25,
               blurb:
-                "A modern and full-featured MIDI controller, complete with transport buttons, 8 knobs and 8 drum pads.",
+                "A modern and full-featured MIDI controller, complete with transport buttons, 8 knobs and 8 drum pads. Great for getting hands-on in Logic, or your DAW of choice.",
               release: 2017,
               quantity: 1,
               availableWithRehearsalBooking: false,
@@ -333,7 +344,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Large MIDI keyboard",
               image: keystudio,
               blurb:
-                "This is the main keyboard in our control room, with ample range to track in more complex parts in Logic.",
+                "This is the main keyboard in our control room, with a larger 4-octave range for tracking in more complex piano parts in Logic.",
               release: 2008,
               quantity: 1,
               availableWithRehearsalBooking: false,

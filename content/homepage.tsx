@@ -353,7 +353,7 @@ const homepageContent: PageComponentInput[] = [
               subtitle: "Closed-back studio headphones",
               image: dt770pro,
               blurb:
-                "Unchanged for 40 years, these iconic headphones are the top-selling studio headphones for a reason. They are particularly well-known for their bright and detailed high-end.",
+                "Unchanged for 40 years, these iconic headphones are the top-selling studio headphones for a reason. They are particularly well-known for their detailed high-end.",
               release: 1985,
               quantity: 1,
               availableWithRehearsalBooking: false,

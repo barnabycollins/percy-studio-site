@@ -1,3 +1,6 @@
+"use client";
+
+import Flex from "@react-css/flex";
 import pageLayoutStyles from "../pageLayout.module.css";
 import { HeaderProps } from "../../types/props/Header";
 
@@ -37,8 +40,14 @@ export function Header({ title, subtitle, videoUrl }: HeaderProps) {
         <div
           className={`${pageLayoutStyles.container} ${pageLayoutStyles.topMargin}`}
         >
-          <h1>{title}</h1>
-          <h2>{subtitle}</h2>
+          <Flex
+            column
+            alignItemsCenter
+            style={{ width: "100%", height: "100%", marginTop: "30vh" }}
+          >
+            <h1 style={{ textAlign: "center" }}>{title}</h1>
+            <h2 style={{ textAlign: "center" }}>{subtitle}</h2>
+          </Flex>
         </div>
       </div>
     </div>

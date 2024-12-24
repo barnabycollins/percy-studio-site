@@ -7,6 +7,13 @@
   grid-template-areas: ". . content . .";
 }
 
+@media screen and (max-width: 1400px) {
+  .containerParent {
+    grid-template-columns: var(--navEdgePadding) 1fr var(--navEdgePadding);
+    grid-template-areas: ". content .";
+  }
+}
+
 .container {
   grid-area: content;
 }

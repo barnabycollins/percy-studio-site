@@ -41,8 +41,9 @@ const homepageContent: PageComponentInput[] = [
   {
     component: "Header",
     content: {
-      title: "Title",
-      subtitle: "Subtitle",
+      title: "Percy Studio",
+      subtitle:
+        "Welcome to our community-run, non-profit recording studio and rehearsal space in the centre of Bath.",
       videoUrl: "https://percystudiobath.github.io/media/montage.webm",
     },
   },

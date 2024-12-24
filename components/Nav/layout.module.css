@@ -39,3 +39,13 @@
 .sidebar {
   grid-area: sidebar;
 }
+
+@media screen and (max-width: 1400px) {
+  .mainNav {
+    grid-template-columns: var(--navThickness) 10px 1fr 10px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

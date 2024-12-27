@@ -25,7 +25,10 @@ export function Footer() {
                   studio@percycentre.org.uk
                 </a>
               </div>
-              <div id="contact-phone">01225 423014 • 07366 331313</div>
+              <div id="contact-phone">
+                <a href="tel:+441225423014">01225 423014</a> •{" "}
+                <a href="tel:+447366331313">07366 331313</a>
+              </div>
               <div id="charity-number">
                 Charity no.{" "}
                 <a

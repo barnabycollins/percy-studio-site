@@ -1,6 +1,7 @@
 :root {
   --background: #000000;
   --background-semitransparent: #000000aa;
+  --background-transparent25: #0000003f;
   --background-transparent75: #000000cf;
   --text-color: #ffffff;
 }
@@ -8,8 +9,13 @@
 [data-theme="light"] {
   --background: #ffffff;
   --background-semitransparent: #ffffff33;
+  --background-transparent25: #ffffff3f;
   --background-transparent75: #ffffffcf;
   --text-color: #000000;
+}
+
+a {
+  color: var(--text-color);
 }
 
 body {
@@ -23,6 +29,10 @@ body {
   font-family: "Josefin Slab", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

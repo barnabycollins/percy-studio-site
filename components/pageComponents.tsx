@@ -26,8 +26,8 @@ export const pageComponentMapping = {
 
 export function renderPageComponents(components: PageComponentInput[]) {
   return (
-    <main>
-      {components.map(({ component: componentName, content }, index) => {
+    <main id="top">
+      {components.map(({ component: componentName, content, id }, index) => {
         const { component: Component, config } =
           pageComponentMapping[componentName];
 
@@ -83,7 +83,9 @@ export function renderPageComponents(components: PageComponentInput[]) {
         }
 
         return (
-          <Fragment key={`${componentName}-${index}`}>{nodeToReturn}</Fragment>
+          <div id={id} key={`${componentName}-${id}`}>
+            {nodeToReturn}
+          </div>
         );
       })}
     </main>

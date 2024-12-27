@@ -4,8 +4,14 @@ import { useEffect, useState } from "react";
 
 function getWindowDimensions() {
   return {
-    width: window?.innerWidth ?? NaN,
-    height: window?.innerHeight ?? NaN,
+    width:
+      typeof window !== "undefined" && window && window?.innerWidth
+        ? window.innerWidth
+        : NaN,
+    height:
+      typeof window !== "undefined" && window && window?.innerHeight
+        ? window?.innerHeight
+        : NaN,
   };
 }
 

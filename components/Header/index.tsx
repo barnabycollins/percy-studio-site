@@ -9,7 +9,7 @@ export function Header({ title, subtitle, videoUrl }: HeaderProps) {
     <div
       className="header"
       style={{
-        height: "100vh",
+        height: "60vh",
       }}
     >
       <div
@@ -43,10 +43,12 @@ export function Header({ title, subtitle, videoUrl }: HeaderProps) {
           <Flex
             column
             alignItemsCenter
-            style={{ width: "100%", height: "100%", marginTop: "30vh" }}
+            style={{ width: "100%", height: "100%", marginTop: "20vh" }}
           >
-            <h1 style={{ textAlign: "center" }}>{title}</h1>
-            <h2 style={{ textAlign: "center" }}>{subtitle}</h2>
+            <h1 style={{ textAlign: "center", fontSize: 40, marginBottom: 20 }}>
+              {title}
+            </h1>
+            <h2 style={{ textAlign: "center", fontSize: 28 }}>{subtitle}</h2>
           </Flex>
         </div>
       </div>

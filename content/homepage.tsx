@@ -40,15 +40,17 @@ import megabass from "./media/equipment/megabass.webp";
 const homepageContent: PageComponentInput[] = [
   {
     component: "Header",
+    id: "header",
     content: {
       title: "Percy Studio",
       subtitle:
-        "Welcome to our community-run, non-profit recording studio and rehearsal space in the centre of Bath.",
+        "A community-run, non-profit recording studio and rehearsal space in the centre of Bath.",
       videoUrl: "https://percystudiobath.github.io/media/montage.webm",
     },
   },
   {
     component: "Equipment",
+    id: "equipment",
     content: {
       title: "Equipment",
       background: fadersStock,
@@ -435,6 +437,7 @@ const homepageContent: PageComponentInput[] = [
   },
   {
     component: "Engineers",
+    id: "engineers",
     content: {
       title: "Engineers",
       background: engineerStock,

@@ -19,7 +19,9 @@ export function Equipment({ title, categories }: EquipmentProps) {
     ]);
   }, []);
 
-  const columnCount = Math.min(Math.max(Math.floor((width - 80) / 400), 0), 3);
+  const columnCount = isNaN(width)
+    ? 3
+    : Math.min(Math.max(Math.floor((width - 80) / 400), 0), 3);
 
   return (
     <Flex

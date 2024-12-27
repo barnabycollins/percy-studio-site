@@ -1,7 +1,25 @@
+"use client";
+
 import Flex from "@react-css/flex";
 import { NavBorderBox } from "./BorderBox";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+
+type NavConfig = {
+  label: string;
+  link: string;
+}[];
+
+const navConfig: NavConfig = [
+  {
+    label: "Equipment",
+    link: "#equipment",
+  },
+  {
+    label: "Engineers",
+    link: "#engineers",
+  },
+];
 
 export function TopNav() {
   const { width } = useWindowDimensions();
@@ -25,8 +43,11 @@ export function TopNav() {
             width: "100%",
           }}
         >
-          <div>egg</div>
-          <div>egg2</div>
+          {navConfig.map((item) => (
+            <a href={item.link} key={item.link} style={{ fontSize: 18 }}>
+              {item.label}
+            </a>
+          ))}
         </Flex>
         {width <= 1400 && <ThemeSwitcher />}
       </Flex>

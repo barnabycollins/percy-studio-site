@@ -4,7 +4,6 @@
 const nextConfig = {
   output: "export",
   distDir: "dist",
-  basePath: process.env.NODE_ENV === "development" ? "" : "/percy-studio-site",
 
   images: { unoptimized: true },
 

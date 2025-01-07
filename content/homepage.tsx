@@ -456,18 +456,19 @@ const homepageContent: PageComponentInput[] = [
             "Mastering",
             "Radio",
           ],
-          blurb: `Mike has been a fixture of the Bath music scene for over 25 years as a singer, producer, DJ and promoter
-            across the punk and electronic music subcultures. He has decades of gigs, tours and festivals across the UK,
-            Europe and America under his belt, plus nearly a dozen music collectives and bands.
+          blurb: `Mike has been a fixture of the Bath music scene for over 25 years as a vocalist/band member, producer, DJ and promoter. 
             <br>
-            He then moved into production, completing two degrees in Creative Music Technology and Sound Production at
-            Bath Spa University and working on a number of ambitious projects both on his own and with other collaborators.
-            He also has been heavily involved in the local Frome FM radio station for over 10 years, and still holds a monthly
-            slot with his show, Basement 7.`,
+            An active contributor to the underground punk scene and a DJ of eclectic musical subcultures. 
+            <br>
+            He has decades of gigs, tours and festivals across the UK, Europe and America under his belt, plus nearly a dozen music collectives and bands.
+            <br>
+            He moved into sound production, completing two degrees in Creative Music Technology and a Sound Production Masters at Bath Spa University focusing mainly on contemporary production techniques and acousmatic sound design based compositions.
+            <br>
+            He also has been heavily involved in the local Frome FM radio station for over 10 years, and still holds a monthly slot with his show, Basement 7.`,
           portfolio: [
             {
               label: "Basement 7",
-              link: "https://www.frome.fm/programmes/basement-7",
+              link: "https://www.mixcloud.com/FromeFM/playlists/basement-7/",
             },
           ],
           socials: [
@@ -476,13 +477,13 @@ const homepageContent: PageComponentInput[] = [
               link: "https://soundcloud.com/mazysmith1",
             },
             {
-              platform: "soundcloud",
-              link: "https://soundcloud.com/general-e-mixes",
-            },
-            {
               platform: "other",
               label: "Website",
               link: "https://generalesmith.blogspot.com",
+            },
+            {
+              platform: "bandcamp",
+              link: "https://b7recordings.bandcamp.com/"
             },
           ],
         },

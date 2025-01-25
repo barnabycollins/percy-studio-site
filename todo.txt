@@ -1,0 +1,3 @@
+- booking form
+- details on the space / layout / photos
+- projects component

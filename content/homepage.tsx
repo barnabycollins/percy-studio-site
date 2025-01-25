@@ -483,7 +483,7 @@ const homepageContent: PageComponentInput[] = [
             },
             {
               platform: "bandcamp",
-              link: "https://b7recordings.bandcamp.com/"
+              link: "https://b7recordings.bandcamp.com/",
             },
           ],
         },
@@ -531,6 +531,13 @@ const homepageContent: PageComponentInput[] = [
           ],
         },
       ],
+    },
+  },
+  {
+    id: "booking_form",
+    component: "BookingForm",
+    content: {
+      formPostUrl: "https://formspree.io/f/mrbebvnw",
     },
   },
 ];

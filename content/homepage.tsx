@@ -538,6 +538,33 @@ const homepageContent: PageComponentInput[] = [
     component: "BookingForm",
     content: {
       formPostUrl: "https://formspree.io/f/mrbebvnw",
+      fields: [
+        {
+          type: "email",
+          formId: "email",
+          label: "Your Email",
+          required: true,
+        },
+        {
+          type: "text",
+          formId: "phone",
+          label: "Your phone number",
+          required: false,
+        },
+        {
+          type: "textarea",
+          formId: "project",
+          label: "What project are you working on in the studio?",
+          required: true,
+        },
+        {
+          type: "textarea",
+          formId: "needs",
+          label: "What do you need from us?",
+          required: true,
+        },
+      ],
+      submitText: "Submit",
     },
   },
 ];

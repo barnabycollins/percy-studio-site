@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider>
+        <ThemeProvider enableSystem={false} defaultTheme="dark">
           <MainNav />
           {children}
           <Footer />

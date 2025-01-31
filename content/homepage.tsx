@@ -535,7 +535,7 @@ const homepageContent: PageComponentInput[] = [
   },
   {
     id: "booking_form",
-    component: "BookingForm",
+    component: "Form",
     content: {
       formPostUrl: "https://formspree.io/f/mrbebvnw",
       fields: [
@@ -562,6 +562,26 @@ const homepageContent: PageComponentInput[] = [
           formId: "needs",
           label: "What do you need from us?",
           required: true,
+        },
+        {
+          type: "radio",
+          formId: "test1",
+          label: "big egg",
+          required: true,
+          options: [
+            { label: "egg 1", value: "egg1" },
+            { label: "egg 2", value: "egg2" },
+          ],
+        },
+        {
+          type: "checkbox",
+          formId: "test1",
+          label: "big egg",
+          required: true,
+          options: [
+            { label: "egg 1", value: "egg1" },
+            { label: "egg 2", value: "egg2" },
+          ],
         },
       ],
       submitText: "Submit",

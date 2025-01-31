@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import { Equipment } from "./Equipment";
 import { Engineers } from "./Engineers";
 import Image from "next/image";
-import { BookingForm } from "./BookingForm";
+import { Form } from "./Form";
 
 export const pageComponentMapping = {
   Header: { component: Header, config: { contain: false, padIfAtTop: false } },
@@ -17,8 +17,8 @@ export const pageComponentMapping = {
     component: Engineers,
     config: { contain: true, padIfAtTop: true },
   },
-  BookingForm: {
-    component: BookingForm,
+  Form: {
+    component: Form,
     config: { contain: true, padIfAtTop: true },
   },
 } as Record<

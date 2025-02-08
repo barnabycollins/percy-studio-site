@@ -537,6 +537,7 @@ const homepageContent: PageComponentInput[] = [
     id: "booking_form",
     component: "Form",
     content: {
+      title: "Booking Form",
       formPostUrl: "https://formspree.io/f/mrbebvnw",
       fields: [
         {

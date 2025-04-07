@@ -1,5 +1,6 @@
 export type FormProps = {
   title: string;
+  blurb?: string;
   formPostUrl: string;
   fields: ((
     | { type: "email" | "text" | "textarea" }

@@ -538,12 +538,20 @@ const homepageContent: PageComponentInput[] = [
     component: "Form",
     content: {
       title: "Booking Form",
+      blurb:
+        "Use this form to make an enquiry to use the studio. We'll try and get back to you within a day or two.",
       formPostUrl: "https://formspree.io/f/mrbebvnw",
       fields: [
         {
+          type: "text",
+          formId: "name",
+          label: "Your full name",
+          required: true,
+        },
+        {
           type: "email",
           formId: "email",
-          label: "Your Email",
+          label: "Your email",
           required: true,
         },
         {
@@ -553,36 +561,64 @@ const homepageContent: PageComponentInput[] = [
           required: false,
         },
         {
-          type: "textarea",
-          formId: "project",
-          label: "What project are you working on in the studio?",
-          required: true,
-        },
-        {
-          type: "textarea",
-          formId: "needs",
-          label: "What do you need from us?",
-          required: true,
+          type: "text",
+          formId: "projectOrBandName",
+          label: "Project or band name",
+          required: false,
         },
         {
           type: "radio",
-          formId: "test1",
-          label: "big egg",
+          formId: "bookingType",
+          label: "What are you looking to do in the studio?",
           required: true,
           options: [
-            { label: "egg 1", value: "egg1" },
-            { label: "egg 2", value: "egg2" },
+            {
+              label: "Rehearsal",
+              value: "rehearsal",
+            },
+            {
+              label: "Recording",
+              value: "recording",
+            },
+            {
+              label: "Production, mixing or mastering",
+              value: "mixingOrMastering",
+            },
+            {
+              label: "Spoken word recording",
+              value: "spokenWord",
+            },
+            {
+              label: "Other (give details below)",
+              value: "other",
+            },
           ],
         },
         {
-          type: "checkbox",
-          formId: "test2",
-          label: "big egg",
+          type: "textarea",
+          formId: "project",
+          label:
+            "What project are you working on in the studio? Please give details of musical genre, instrumentation, etc if relevant.",
           required: true,
-          options: [
-            { label: "egg 1", value: "egg1" },
-            { label: "egg 2", value: "egg2" },
-          ],
+        },
+        {
+          type: "textarea",
+          formId: "equipment",
+          label: "What equipment do you need available for your session(s)?",
+          required: true,
+        },
+        {
+          type: "textarea",
+          formId: "dates",
+          label: "What are you looking for in terms of date(s) / timings?",
+          required: true,
+        },
+        {
+          type: "textarea",
+          formId: "services",
+          label:
+            "Do you need any services (eg, engineers, production, mastering) from us? If so, please give details.",
+          required: false,
         },
       ],
       submitText: "Submit",

@@ -6,6 +6,7 @@ import { Equipment } from "./Equipment";
 import { Engineers } from "./Engineers";
 import Image from "next/image";
 import { Form } from "./Form";
+import { Space } from "./Space";
 
 export const pageComponentMapping = {
   Header: { component: Header, config: { contain: false, padIfAtTop: false } },
@@ -20,6 +21,13 @@ export const pageComponentMapping = {
   Form: {
     component: Form,
     config: { contain: true, padIfAtTop: true },
+  },
+  Space: {
+    component: Space,
+    config: {
+      contain: true,
+      padIfAtTop: true,
+    },
   },
 } as Record<
   PageComponentInput["component"],

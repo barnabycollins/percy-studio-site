@@ -31,7 +31,7 @@ export function Equipment({ title, categories }: EquipmentProps) {
       style={{ padding: "4em 0", maxWidth: "100vw" }}
     >
       <h2>{title}</h2>
-      <Flex className="equipment" flexDirection="column" gap="3em">
+      <Flex flexDirection="column" gap="3em">
         {categories.map((category, categoryIndex) => (
           <Flex key={category.title} flexDirection="column" gap="1em">
             <h3>{category.title}</h3>

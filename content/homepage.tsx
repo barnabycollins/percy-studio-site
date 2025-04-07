@@ -49,6 +49,22 @@ const homepageContent: PageComponentInput[] = [
     },
   },
   {
+    component: "Space",
+    id: "space",
+    content: {
+      title: "Our space",
+      blurb: ["Come book our space big man"],
+      tabs: [
+        {
+          id: "live",
+          title: "Live room",
+          images: [blazer, focus111s],
+          blurb: ["cool", "good"],
+        },
+      ],
+    },
+  },
+  {
     component: "Equipment",
     id: "equipment",
     content: {

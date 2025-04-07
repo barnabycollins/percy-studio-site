@@ -3,7 +3,8 @@ export type FormProps = {
   blurb?: string;
   formPostUrl: string;
   fields: ((
-    | { type: "email" | "text" | "textarea" }
+    | { type: "email" | "text" }
+    | { type: "textarea"; placeholder?: string }
     | {
         type: "checkbox" | "radio";
         options: { label: string; value: string }[];

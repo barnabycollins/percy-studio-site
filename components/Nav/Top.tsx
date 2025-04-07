@@ -49,7 +49,6 @@ export function TopNav() {
             </a>
           ))}
         </Flex>
-        {width <= 1400 && <ThemeSwitcher />}
       </Flex>
     </NavBorderBox>
   );

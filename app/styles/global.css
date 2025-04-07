@@ -31,6 +31,14 @@ body {
   font-style: normal;
 }
 
+input,
+textarea,
+label {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }

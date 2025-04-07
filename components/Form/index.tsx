@@ -77,6 +77,9 @@ export function Form({
                           display: "flex",
                           flexDirection: "column",
                           gap: "0.2rem",
+                          listStyleType: "none",
+                          padding: 0,
+                          margin: 0,
                         }}
                       >
                         {f.options.map((o) => {
@@ -89,7 +92,7 @@ export function Form({
                                   name={f.formId}
                                   value={o.value}
                                   id={optionId}
-                                />
+                                />{" "}
                                 {o.label}
                               </label>
                             </li>
@@ -118,7 +121,7 @@ export function Form({
                         id={htmlId}
                         name={f.formId}
                         required={f.required}
-                        style={{ padding: "10px" }}
+                        style={{ padding: "10px", resize: "vertical" }}
                       />
                     </label>
                   );

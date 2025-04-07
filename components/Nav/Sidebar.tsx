@@ -20,9 +20,7 @@ export function NavSidebar() {
           boxSizing: "border-box",
           padding: 10,
         }}
-      >
-        <ThemeSwitcher />
-      </Flex>
+      ></Flex>
     </NavBorderBox>
   );
 }

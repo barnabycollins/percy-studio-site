@@ -574,23 +574,23 @@ const homepageContent: PageComponentInput[] = [
           options: [
             {
               label: "Rehearsal",
-              value: "rehearsal",
+              value: "Rehearsal",
             },
             {
               label: "Recording",
-              value: "recording",
+              value: "Recording",
             },
             {
               label: "Production, mixing or mastering",
-              value: "mixingOrMastering",
+              value: "Production, mixing or mastering",
             },
             {
               label: "Spoken word recording",
-              value: "spokenWord",
+              value: "Spoken word recording",
             },
             {
               label: "Other (give details below)",
-              value: "other",
+              value: "Other",
             },
           ],
         },
@@ -604,7 +604,8 @@ const homepageContent: PageComponentInput[] = [
         {
           type: "textarea",
           formId: "equipment",
-          label: "What equipment do you need available for your session(s)?",
+          label:
+            "What equipment do you need available for your session(s)? Feel free to use a bullet list if convenient.",
           required: true,
         },
         {

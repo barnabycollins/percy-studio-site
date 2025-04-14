@@ -61,6 +61,12 @@ const homepageContent: PageComponentInput[] = [
           images: [blazer, focus111s],
           blurb: ["cool", "good"],
         },
+        {
+          id: "control",
+          title: "Control room",
+          images: [blazer, focus111s],
+          blurb: ["cool", "good"],
+        },
       ],
     },
   },

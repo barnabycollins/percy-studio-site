@@ -1,7 +1,7 @@
 import pageLayoutStyles from "./pageLayout.module.css";
 import { PageComponentInput } from "../types/content";
 import { Header } from "./Header";
-import { Fragment } from "react";
+import { CSSProperties, Fragment } from "react";
 import { Equipment } from "./Equipment";
 import { Engineers } from "./Engineers";
 import Image from "next/image";
@@ -37,6 +37,14 @@ export const pageComponentMapping = {
   }
 >;
 
+const bgStyles: CSSProperties = {
+  position: "absolute",
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
+};
+
 export function renderPageComponents(components: PageComponentInput[]) {
   return (
     <main id="top">
@@ -58,30 +66,24 @@ export function renderPageComponents(components: PageComponentInput[]) {
                     src={content.background}
                     alt="Background image"
                     style={{
+                      ...bgStyles,
                       zIndex: -1,
                       objectFit: "cover",
-                      position: "absolute",
-                      top: 0,
-                      right: 0,
-                      bottom: 0,
-                      left: 0,
                       width: "100%",
                       height: "100%",
                     }}
                   />
                   <div
                     style={{
+                      ...bgStyles,
                       background: "var(--background-transparent75)",
-                      position: "absolute",
-                      top: 0,
-                      right: 0,
-                      bottom: 0,
-                      left: 0,
                       zIndex: 0,
                     }}
                   />
                 </>
-              ) : null}
+              ) : (
+                <div style={{ ...bgStyles, background: "var(--background)" }} />
+              )}
               <div className={pageLayoutStyles.container} style={{ zIndex: 1 }}>
                 {nodeToReturn}
               </div>
